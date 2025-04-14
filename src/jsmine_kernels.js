@@ -9,11 +9,11 @@ function validArgs(num, arrayType){
   if(num){
     if(num !== len){
       var err = new Error();
-      err.description = 'The amount of parameters allow it is ' + num + ', received '+ len
+      err.description = 'The amount of parameters allowed is ' + num + ', received '+ len;
       throw err;
     }
   }
-  //Verify the type of each of the parameters. If one is wrong throw an error.
+  //Verify the type of each of the parameters. If one is wrong throw a TypeError.
   if(arrayType){
     for(var i = 0; i < len; i++){
       if(typeOf(args[i]) !== arrayType[i]){
