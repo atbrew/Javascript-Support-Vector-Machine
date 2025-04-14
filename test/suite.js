@@ -36,9 +36,9 @@ QUnit.testDone = function(test){
 
 
 
-load("./jsmine_kernels.js");
+load("../src/jsmine_kernels.js");
 load("./jsmine_kernels_test.js");
 
-load("./jsmine_smo.js");
+load("../src/jsmine_smo.js");
 load("./jsmine_smo_test.js");
 
