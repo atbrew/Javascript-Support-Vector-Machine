@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive SVM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive SVM</h1>
+    <div class="point-class-selector">
+        <label>
+            <input type="radio" id="radio-x" name="point-class" value="1" checked>
+            Place 'x'
+        </label>
+        <label>
+            <input type="radio" id="radio-o" name="point-class" value="-1">
+            Place 'o'
+        </label>
+    </div>
+    <canvas id="svm-canvas" width="800" height="600"></canvas>
+    <div class="buttons">
+        <button id="train-btn" style="display: none;">Train SVM</button>
+        <button id="clear-btn">Clear</button>
+    </div>
+    <script src="../src/jsmine_kernels.js"></script>
+    <script src="../src/jsmine_smo.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
