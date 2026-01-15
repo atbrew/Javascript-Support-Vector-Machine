@@ -1,0 +1,28 @@
+{
+  "name": "javascript-support-vector-machine",
+  "version": "1.0.0",
+  "description": "This is a **toy project** to implement a Support Vector Machine (SVM) from scratch in JavaScript. It is intended for educational purposes, experimentation, and learning. **Do not use this code for production or critical applications.**",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atbrew/Javascript-Support-Vector-Machine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/atbrew/Javascript-Support-Vector-Machine/issues"
+  },
+  "homepage": "https://github.com/atbrew/Javascript-Support-Vector-Machine#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}

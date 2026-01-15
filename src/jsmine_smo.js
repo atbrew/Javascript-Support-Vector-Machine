@@ -304,3 +304,19 @@ JSSMOTrainer.prototype.SVMOutput = function(model, idx) {
   }
   return result - model.threshold;
 };
+
+/**
+ * Predicts the class of a new example using the trained SVM model.
+ * @param {JSSMOModel} model - The trained SVM model.
+ * @param {Object} example - The new example to classify.
+ * @returns {number} The predicted class (1 or -1).
+ */
+JSSMOTrainer.prototype.predict = function(model, example) {
+  var result = 0;
+  var N = model.examples.length;
+  for (var i = 0; i < N; i++) {
+    var y = model.labeller(model.examples[i]) ? 1 : -1;
+    result += model.alpha[i] * y * model.kernel(model.examples[i], example);
+  }
+  return Math.sign(result - model.threshold);
+};
